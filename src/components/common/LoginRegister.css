@@ -1,0 +1,80 @@
+/* General styles for the account container */
+.account {
+    @apply w-full h-screen bg-brandcolor flex flex-col lg:flex-row relative;
+}
+
+/* Text container inside account */
+.account .accounttext {
+    @apply text-[24px] text-white font-semibold w-full lg:w-[555px] pt-[80px] px-[20px] lg:pt-[154px] lg:pl-[30px];
+}
+
+/* Image inside account */
+.accountimage {
+    @apply absolute top-[28%] w-[15%] max-w-[918px] lg:w-[918px]   ;
+    animation: move linear infinite 1s;
+}
+
+/* Keyframes for image animation */
+@keyframes move {
+    0% { top: 25%; }
+    50% { top: 28%; }
+    100% { top: 25%; }
+}
+
+/* Form container with responsive height */
+.accountform {
+    @apply w-full h-auto lg:h-screen bg-white rounded-t-[30px] lg:rounded-[50px] pt-[50px] lg:pt-[109px] pb-[50px] lg:pb-[119px];
+}
+
+/* Heading in the form */
+.accountformhead h2 {
+    @apply text-[22px] lg:text-[48px] font-poppins font-bold text-black text-center;
+}
+
+/* Button container with responsive gap and margins */
+.button {
+    @apply flex lg:flex-row flex-col justify-center gap-[20px] lg:gap-[54px] mt-[32px] lg:mt-[52px] mb-[30px] lg:mb-[44px] pl-9 lg:pl-0;
+}
+
+/* Individual button */
+.button button {
+    @apply flex  justify-center items-center w-[300px] lg:w-[314px] h-[50px] lg:h-[67px] gap-[12px] lg:gap-[17px] border-2 border-[#A6A6A6] rounded-[20px] font-poppins font-medium text-[#9D9D9D]  hover:bg-slate-500;
+}
+
+/* Subtitle in form */
+.accountform h4 {
+    @apply text-[24px] lg:text-[36px] font-poppins font-medium text-[#A6A6A6] text-center mb-[16px] lg:mb-[20px];
+}
+
+/* Form layout */
+form {
+    @apply text-center flex flex-col items-center gap-[28px] lg:gap-[42px] relative;
+}
+
+/* Input field */
+form input {
+    @apply border-0 bg-transparent w-full max-w-[320px] lg:max-w-[526px] focus:outline-none border-b-2;
+}
+
+/* Create account button */
+.createaccountbutton {
+    @apply mt-[40px] lg:mt-[85px] bg-[#B0D8DA] text-white rounded-[25px] w-full max-w-[320px] lg:w-[526px] mx-auto h-[60px] lg:h-[74px] flex justify-center text-[20px] lg:text-[30px] font-poppins font-bold mb-[20px] lg:mb-[41px];
+}
+
+/* Last text container */
+.lasttext {
+    @apply flex items-center justify-center gap-[2px];
+}
+
+/* Last text paragraph */
+.lasttext p {
+    @apply text-[#A6A6A6]  font-poppins text-[16px] lg:text-[26px] font-medium;
+}
+
+/* Last text button */
+.lasttext button {
+   @apply text-[#B0D8DA] font-poppins text-[16px] lg:text-[26px] font-medium;
+}
+span{
+    color: red;
+}
